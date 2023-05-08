@@ -13,7 +13,7 @@
 }
 
 /*Mesage*/
-#fade{
+#fade {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     z-index: 10;
 }
 
-#fade .spinner-border{
+#fade .spinner-border {
     width: 60px;
     height: 60px;
 }
@@ -39,7 +39,7 @@
     width: 40%;
 }
 
-.alert.alert-light p{
+.alert.alert-light p {
     border-bottom: 1px solid #333;
     padding: 1.2em 0;
 }
@@ -63,6 +63,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .step i {
     background-color: var(--secondary-bg-color);
     width: 45px;
@@ -93,17 +94,26 @@
 }
 
 /* Form Header */
-#form-header p {
-    color: var(--text-color);
-
+#form-header {
+    padding: 1.5em;
 }
 
+#form-header p {
+    color: var(--text-color);
+}
+
+#address-form{
+    padding: 1.5em;
+    background-color: #04044c;
+    width: 100%;
+    align-items: center;
+}
 /* form */
 #order-form-container input,
 #order-form-container select {
     background-color: var(--bg-color);
     border: 2px solid var(--border-color);
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 #order-form-container select {
@@ -116,13 +126,17 @@
 }
 
 #order-form-container input:disabled,
-#order-form-container select:disabled{
-    background-color: var(--secondary-bg-color);
+#order-form-container select:disabled {
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
 #order-form-container input:focus{
     border-color: var(--secondary-color);
+}
+
+#order-form-container .form-floating > label {
+    left: 1em;
 }
 
 #save-btn {
@@ -133,3 +147,17 @@
     border-radius: 1.5em;
 }
 
+#close-message {
+    background-color: var(--secondary-bg-color);
+    border: none;
+    height: 3em;
+    width: 8em;
+    border-radius: 1.5em;
+}
+
+/* Responsive */
+@media (min-width: 500px) {
+    #save-btn {
+      width: 8em;
+    }
+  }
